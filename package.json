@@ -1,0 +1,34 @@
+{
+  "name": "paraboniPromoters-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha ./test/*.js --reporter spec",
+    "postinstall": "npm run changeMongoUrl",
+    "changeMongoUrl": "gulp change-mongoUrl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:eduardorost/paraboniPromoters-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/eduardorost/paraboniPromoters-api#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "chai": "^3.5.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-change": "^1.0.0",
+    "jsonwebtoken": "^6.2.0",
+    "mocha": "^2.4.5",
+    "mongoose": "^4.4.12"
+  },
+  "engines": {
+    "node": "4.4.3",
+    "npm": "2.15.1"
+  }
+}
